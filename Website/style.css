@@ -1,0 +1,180 @@
+/* Website Format */
+html,body {
+    margin:0%;
+    padding:0%;
+    width: 100%;
+    
+}
+
+/* Video */
+.video-container {
+    position: relative;
+    z-index:-1;
+}
+video {
+    right: 0%;
+    bottom: 0%;
+    min-width: 100%;
+    min-height: 100%;
+}
+.overlay-desc {
+    position: absolute;
+    top: 0%; right: 0%; bottom: 0%; left: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Title */
+h1 {
+    color: white;
+    font-family: 'Nobile';
+    font-size: 100;
+    text-align: center;
+}
+
+/* Navigation Bar (Horizontal) */
+.navbar {
+    
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0%; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    list-style-type: none;
+    margin: 0;
+    padding: 5;
+    overflow: hidden;
+    text-align: center;
+    background-color: grey;
+}
+.navbar a {
+
+    color: white;
+    padding: 5%;
+    text-decoration: none;
+    display: inline-box;
+    width: 100%; /* Full width */
+}
+/* Change the link color to grey on hover */
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+/* Grey dividing boxes */
+.demobox {
+
+    background-color: grey ;
+    padding: 1%;
+
+
+}
+/* bottom of webpage */
+.footer {
+    
+    background-color: grey ;
+    padding: 5%;
+    
+    
+}
+
+/* digital clock */
+.clock{
+    text-align:center;
+    width:auto;
+    height:auto;
+    color: white;
+    font-size: 80;
+   
+}
+
+
+/* Website background */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: lightgray;
+    z-index:-1;
+}
+
+/* Picture format */
+.picture{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    
+}
+
+/* Picture titles */
+h2{
+    color: black;
+    font-family: 'Nobile';
+    font-size: 100;
+    text-align: center;
+}
+
+/* picture descriptions */
+p{
+    color: black;
+    font-family: 'Nobile';
+    font-size: 20;
+    text-align: center;
+}
+
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* fade in the popup */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+
